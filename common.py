@@ -3,14 +3,14 @@ import pandas as pd
 
 @st.cache_data
 def get_bacteria_df():
-    df_bacteria = pd.read_excel(r'D:\study\ds-7010\dissertation\OCTOBER\data_Study\Data Sheet 2.xlsx',
+    df_bacteria = pd.read_excel(r'.\Data Sheet 2.xlsx',
                                 sheet_name='E_straw_Bac', skiprows=3, header=[0, 1, 2, 3])
     return df_bacteria
 
 @st.cache_data
 def get_fungi_df():
     """ updade sheet name and skiprows based on the data sheet 2.xlsx file"""
-    df_fungi = pd.read_excel(r'D:\study\ds-7010\dissertation\OCTOBER\data_Study\Data Sheet 2.xlsx',
+    df_fungi = pd.read_excel(r'.\Data Sheet 2.xlsx',
                              sheet_name='E_straw_Fungi', skiprows=3, header=[0, 1, 2, 3])
     return df_fungi
 
@@ -43,3 +43,4 @@ def tidy_bacteria_data():
     df_bacteria['sample_type'] = df_bacteria['variable'].apply(lambda x: x.split('_')[2])
     df_bacteria['treatment'] = df_bacteria['variable'].apply(lambda x: x.split('_')[3])
     df_bacteria = df_bacteria.drop(columns=['variable'])
+    return df_bacteria
