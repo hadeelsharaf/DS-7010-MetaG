@@ -6,8 +6,8 @@ from common import transform_bacteria_data, tidy_bacteria_data
 df_bacteria = transform_bacteria_data()
 df_bacteria_tidy = tidy_bacteria_data()
 
-st.title('Bacteria Data before tidying:')
+st.header('Bacteria Data before tidying:')
 st.dataframe(df_bacteria)
 
-st.title('Bacteria Data After tidying:')
+st.header('Bacteria Data after tidying:')
 st.dataframe(df_bacteria_tidy)

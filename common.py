@@ -50,14 +50,14 @@ def tidy_bacteria_data():
 @st.cache_data
 def transform_fungi_data():
     df_fungi = get_fungi_df()
-    df_fungi.columns = ["_".join([str(index) for index in multi_index]) for multi_index in df_bacteria.columns.ravel()]
+    df_fungi.columns = ["_".join([str(index) for index in multi_index]) for multi_index in df_fungi.columns.ravel()]
     df_fungi = df_fungi.iloc[:-1]
     # Step: Rename multiple columns
-    df_fungi = df_fungi.rename(columns={'Phylum_Unnamed: 1_level_1_Unnamed: 1_level_2_Unnamed: 1_level_3': 'Phylum',
-                                              'Class_Unnamed: 2_level_1_Unnamed: 2_level_2_Unnamed: 2_level_3': 'Class',
-                                              'Order_Unnamed: 3_level_1_Unnamed: 3_level_2_Unnamed: 3_level_3': 'Order',
-                                              'Family_Unnamed: 4_level_1_Unnamed: 4_level_2_Unnamed: 4_level_3': 'Family',
-                                              'Genus_Unnamed: 5_level_1_Unnamed: 5_level_2_Unnamed: 5_level_3': 'Genus'})
+    df_fungi = df_fungi.rename(columns={'Phylum_Unnamed: 0_level_1_Unnamed: 0_level_2_Unnamed: 0_level_3': 'Phylum',
+                                              'Class_Unnamed: 1_level_1_Unnamed: 1_level_2_Unnamed: 1_level_3': 'Class',
+                                              'Order_Unnamed: 2_level_1_Unnamed: 2_level_2_Unnamed: 2_level_3': 'Order',
+                                              'Family_Unnamed: 3_level_1_Unnamed: 3_level_2_Unnamed: 3_level_3': 'Family',
+                                              'Genus_Unnamed: 4_level_1_Unnamed: 4_level_2_Unnamed: 4_level_3': 'Genus'})
 
     # Step: Replace missing values
     df_fungi = df_fungi.fillna('-')
