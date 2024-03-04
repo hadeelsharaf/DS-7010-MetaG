@@ -35,7 +35,7 @@ for page in range(num_pages):
 fig.update_layout(
     height=num_pages * 100,  # Adjust the height based on the number of pages
     showlegend=False,  # Hide legend for simplicity
-    title_text='Pagination Example',
+    title_text='Paginating Bar Chart',
      yaxis=dict(title='Value',tickmode='linear',
         tick0=0,
         dtick=1)
@@ -43,3 +43,40 @@ fig.update_layout(
 
 # Show the plot
 st.plotly_chart(fig)
+
+
+# experimental visualization 
+
+
+# Sample data
+labels = ['Label1', 'Label2', 'Label3', 'Label4', 'Label5', 'Label6', 'Label7']
+values = [1, 1, 0, 0, 1, 0, 1, 0,]
+
+# Create a bar chart
+fig2 = go.Figure()
+
+for i, (label, value) in enumerate(zip(labels, values)):
+    color = 'green' if value == 1 else 'white'
+    border_color = 'black'
+    
+    fig2.add_shape(
+        type='rect',
+        x0=i,
+        y0=0,
+        x1=i + 1,
+        y1=1,
+        fillcolor=color,
+        line=dict(color=border_color),
+        opacity=1
+    )
+
+# Update layout
+fig2.update_layout(
+    xaxis=dict(tickvals=list(range(len(labels))), ticktext=labels),
+    yaxis=dict(range=[0, 1]),
+    showlegend=False,
+)
+
+# Show the plot
+st.header('Experimental Visualization for binary values')
+st.plotly_chart(fig2)
