@@ -26,8 +26,10 @@ st.write('''
           4. Fungi Data View
          
           5. Fungi Data Visualization charts
+
+          6. Fungi Data Clustering charts
          
-          6. experimental Data Visualization charts
+          7. experimental Data Visualization charts
 
          ''')
 
