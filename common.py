@@ -42,6 +42,8 @@ def tidy_bacteria_data():
     df_bacteria['rotation'] = df_bacteria['variable'].apply(lambda x: x.split('_')[1])   
     df_bacteria['sample_type'] = df_bacteria['variable'].apply(lambda x: x.split('_')[2])
     df_bacteria['treatment'] = df_bacteria['variable'].apply(lambda x: x.split('_')[3])
+    # remove spaces from the column treatment
+    df_bacteria['treatment'] = df_bacteria['treatment'].str.strip()
     df_bacteria = df_bacteria.drop(columns=['variable'])
     return df_bacteria
 
@@ -73,5 +75,6 @@ def tidy_fungi_data():
     df_fungi['rotation'] = df_fungi['variable'].apply(lambda x: x.split('_')[1])   
     df_fungi['sample_type'] = df_fungi['variable'].apply(lambda x: x.split('_')[2])
     df_fungi['treatment'] = df_fungi['variable'].apply(lambda x: x.split('_')[3])
+    df_fungi['treatment'] = df_fungi['treatment'].str.strip()
     df_fungi = df_fungi.drop(columns=['variable'])
     return df_fungi

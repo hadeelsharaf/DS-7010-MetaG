@@ -12,3 +12,9 @@ st.write(""" The sunburst chart is applied to the bacteria data before tidying t
 
 st.plotly_chart(fig)
 
+df_bacteria_tidy=tidy_bacteria_data()
+histo_fig = px.histogram(df_bacteria_tidy, x='value', color='location', histfunc='count', facet_col='treatment')
+st.header('Bacteria Histogram Chart after tidying the data')
+st.write(""" The histogram chart is applied to the bacteria data after tidying the data. 
+         The histogram chart is used to visualize the bacteria data distribution .""")
+st.plotly_chart(histo_fig)
