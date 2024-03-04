@@ -41,6 +41,7 @@ fig.update_layout(
         dtick=1)
 )
 
+st.header('Paginated bar chart')
 # Show the plot
 st.plotly_chart(fig)
 
