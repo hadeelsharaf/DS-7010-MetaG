@@ -4,7 +4,7 @@ st.set_page_config(
     page_title="Home Page",
     page_icon="📊",
 ) 
-st.title("META-Gen")
+st.title("META-Gen Tool")
 
 
 
@@ -15,15 +15,19 @@ st.write('''
          Packages used in this application are: streamlit, pandas, numpy, plotly, and matplotlib.
          Clutering and data transformation are done using pandas, numpy and k-protoypes algorithm.
          
-         ## The application is divided into 4 sections:
+         ## The application is divided into sections:
         
           1. Bacteria Data View
          
           2. Bacteria Data Visualization charts
          
-          3. Fungi Data View
+          3. Bacteria Data Clustering charts
          
-          4. Fungi Data Visualization charts
+          4. Fungi Data View
+         
+          5. Fungi Data Visualization charts
+         
+          6. experimental Data Visualization charts
 
          ''')
 
