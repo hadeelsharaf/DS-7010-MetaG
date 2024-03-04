@@ -33,7 +33,7 @@ for page in range(num_pages):
 
 # Update layout
 fig.update_layout(
-    height=num_pages * 100,  # Adjust the height based on the number of pages
+    height=num_pages * 100, 
     showlegend=False,  # Hide legend for simplicity
     title_text='Paginating Bar Chart',
      yaxis=dict(title='Value',tickmode='linear',
