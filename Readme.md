@@ -1,5 +1,7 @@
 # META-Gen Visualization Tool
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10794898.svg)](https://doi.org/10.5281/zenodo.10794898)
+
 This tool is designed to visualize dataset from the study of the effect of straw treatments on the microbial community in the soil. It is built using Streamlit, pandas, numpy, plotly, and matplotlib. Clustering and data transformation are done using pandas, numpy and k-prototypes algorithm.
 
 The application is divided into 4 sections:
