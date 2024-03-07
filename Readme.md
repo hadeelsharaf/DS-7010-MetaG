@@ -37,4 +37,4 @@ The application is divided into 4 sections:
 
 ## Deployed Version
 
-You can access the deployed version of the app `once deplyed` at: [Deployed App URL](#)
+You can access the deployed version of the app at: [Deployed App URL](https://ds--metagtool-dmwcqyuhbd3kaikvk5me8j.streamlit.app/)
