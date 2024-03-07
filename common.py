@@ -3,14 +3,14 @@ import pandas as pd
 
 @st.cache_data
 def get_bacteria_df():
-    df_bacteria = pd.read_excel('Data Sheet 2.xlsx',
+    df_bacteria = pd.read_excel('Data_Sheet_2.xlsx',
                                 sheet_name='E_straw_Bac', skiprows=3, header=[0, 1, 2, 3])
     return df_bacteria
 
 @st.cache_data
 def get_fungi_df():
     """ updade sheet name and skiprows based on the data sheet 2.xlsx file"""
-    df_fungi = pd.read_excel('Data Sheet 2.xlsx',
+    df_fungi = pd.read_excel('Data_Sheet_2.xlsx',
                              sheet_name='F_straw_Fungi', skiprows=3, header=[0, 1, 2, 3])
     return df_fungi
 
