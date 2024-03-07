@@ -4,12 +4,13 @@
 
 This tool is designed to visualize dataset from the study of the effect of straw treatments on the microbial community in the soil. It is built using Streamlit, pandas, numpy, plotly, and matplotlib. Clustering and data transformation are done using pandas, numpy and k-prototypes algorithm.
 
-The application is divided into 4 sections:
+The application is divided into sections:
 
 1. Bacteria Data View
 2. Bacteria Data Visualization charts
 3. Fungi Data View
 4. Fungi Data Visualization charts
+5. Experimental visualization chart to visualize binary data
 
 ## Running the App Locally
 
