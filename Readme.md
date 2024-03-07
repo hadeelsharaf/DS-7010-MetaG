@@ -41,3 +41,9 @@ The application is divided into sections:
 ## Deployed Version
 
 You can access the deployed version of the app at: [Deployed App URL](https://ds--metagtool-dmwcqyuhbd3kaikvk5me8j.streamlit.app/)
+
+## Citation
+
+If you use this tool in your research, please cite it as follows:
+
+Abdelaal. (2024). META-Gen Visualization Tool (Version 1.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.10794898
