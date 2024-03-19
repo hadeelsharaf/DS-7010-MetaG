@@ -42,7 +42,7 @@ The application is divided into sections:
 
 You can access the deployed version of the app at: [Deployed App URL](https://ds--metagtool-dmwcqyuhbd3kaikvk5me8j.streamlit.app/)
 
-## future work to be added: 
+## Future work to be added: 
 
 * The graphs represnting the years distribution
 * Add code snippets for explaining examples on data cleaning 
