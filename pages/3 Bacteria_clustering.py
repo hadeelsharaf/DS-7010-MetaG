@@ -11,7 +11,7 @@ from common import tidy_bacteria_data
 
 df_bacteria = tidy_bacteria_data()
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def create_dm(dataset):
     #if the input dataset is a dataframe, we take out the values as a numpy. 
