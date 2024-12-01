@@ -12,7 +12,7 @@ from common import tidy_fungi_data
 
 df_fungi = tidy_fungi_data()
 
-st.set_option('deprecation.showPyplotGlobalUse', False)
+# st.set_option('deprecation.showPyplotGlobalUse', False)
 
 def create_dm(dataset):
     #if the input dataset is a dataframe, we take out the values as a numpy. 
